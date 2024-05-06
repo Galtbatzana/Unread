@@ -1,0 +1,18 @@
+.b {
+    width: 120px;
+    height: 50px;
+    background-color: green;
+    border: solid;
+    border-color: black;
+    border-radius: 25px
+}
+
+.a {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: solid;
+    border-color: red;
+    background-color: white;
+    padding: 5px;
+}

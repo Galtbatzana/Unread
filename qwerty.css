@@ -1,0 +1,54 @@
+.main {
+    background-color: orange;
+    border-color: black;
+    border: solid;
+}
+
+.top {
+    background-color: orange;
+}
+
+.body {
+    background-color: black;
+    
+    margin-top: 10px;
+    display: flex;
+
+}
+
+
+.body-1 {
+    margin-right: 10px;
+}
+
+.body-2 {
+    margin-left: 10px;
+}
+
+.body-3 {
+    margin-left: 10px;
+}
+
+.body-4 {
+    margin-left: 10px;
+}
+
+.body-5 {
+    margin-left: 10px;
+}
+
+.body-6 {
+    margin-left: 10px;
+}
+
+.body-7 {
+    margin-left: 10px;
+}
+
+.body-8 {
+    margin-left: 10px;
+}
+
+.body-9 {
+    margin-left: 10px;
+}
