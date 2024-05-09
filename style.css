@@ -52,25 +52,17 @@ h6 {
 }
 
 nav {
-    max-width: 100vw;
-    /*height: 41px;*/
+    width: 100%;
     display: flex;
-    /* justify-content: space-between; */
-    align-items: center;
     padding: 32px 20px;
-    /* /background-color: #333; */
     position: absolute;
     z-index: 3;
 }
 
 .nav-head {
     display: flex;
-    justify-content: space-between;
-    background-color: aqua;
 }
 
-/* nav deer display: flex ugsun
-justify-content: space between awchaaad baihaaad yagaad hudluhgui bn? */
 
 nav img {
     width: 134px;
@@ -97,7 +89,6 @@ nav i {
 .hero {
     width: 100%;
     height: 70vh;
-    /* background: url(/img/Khalib.png) no-repeat center center/cover; */
     background: url(https://unread.today/files/969a1aed-77a4-45e9-b7b7-3ee2709aaf31/d8ba5b16449f2b86a48e0cd0901602cb.png);
     background-size: cover;
     background-position: center;
@@ -111,9 +102,7 @@ nav i {
     display: flex;
     z-index: 2;
     flex-direction: column;
-
 }
-
 
 .hero--singer-photo {
     display: none;
@@ -182,7 +171,6 @@ nav i {
     display: flex;
     margin-top: 16px;
     align-items: center;
-
 }
 
 .hero--author-and-text {
@@ -248,6 +236,7 @@ nav i {
     .hero--content h2 {
         font-size: 36px;
     }
+
 }
 
 
@@ -257,7 +246,8 @@ nav i {
     overflow: scroll;
     padding: 20px;
     gap: 20px;
-
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .card--overlay {
@@ -313,9 +303,6 @@ nav i {
     background-image: url(https://unread.today/files/2f1c26d7-6f24-46c8-9307-bbfecc8b41b1/82f56a76bb57f50a1adcd601c560c0ff.jpg);
 }
 
-
-
-
 .card-head {
     display: flex;
     width: 100%;
@@ -333,9 +320,7 @@ nav i {
 .box:hover {
     transform: scale(1.15);
     background-color: turquoise;
-
 }
-
 
 .head p {
     color: #0078f0;
@@ -357,16 +342,28 @@ nav i {
     margin-bottom: 20px;
 }
 
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+
+
 .article-main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     margin: auto;
     padding: 0 35px;
-
+    max-width: 1116px;
 }
 
 .article-1 {
     width: 650px;
     height: auto;
+    cursor: pointer;
+    transition: 0.3s;
+}
 
+.article-1:hover {
+    transform: translateY(-5px);
 }
 
 .article-1-authorimage {
@@ -382,10 +379,7 @@ nav i {
     width: 36px;
     border-radius: 50%;
     margin: 10px, 10px;
-
 }
-
-.article-comment {}
 
 .comment-box-main {
     display: flex;
@@ -395,22 +389,21 @@ nav i {
     justify-content: space-between;
     padding: 20px 30px 20px 40px;
     background-color: white;
-
 }
 
 .comment-box-main a {
     color: blue;
     font-size: bold;
-
 }
-
-.comment-box {}
-
 
 .heiniken img {
     height: 135px;
     width: 135px;
     border-radius: 50%;
+}
+
+.article-1:nth-child(even) {
+    align-self: end;
 }
 
 .article-1:nth-child(odd) .comment-box-main {
@@ -421,34 +414,48 @@ nav i {
 .article-1:nth-child(even) .comment-box-main {
     border-radius: 30px;
     border-top-right-radius: 0px;
-
 }
 
 
-.article-1:nth-child(odd) .article-1-authorimage {
-    align-items:
+.article-1:nth-child(even) .article-1-authorimage {
+    /* justify-content: flex-end; */
+    flex-direction: row-reverse;
+    text-align: end;
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+.prev-week {
+    align-items: center;
+    justify-items: center;
 }
 
 .prev-week-container {
     display: flex;
+    width: 100%;
+    justify-content: center;
     gap: 20px;
-
-
+    margin-top: 40px;
 }
 
 .prev-weeks-box {
     display: flex;
     flex-direction: column;
     gap: 10px 10px;
-
+    width: 420px;
+    height: px;
+    /* backdrop-filter: blur (6px); */
 }
 
 .prev-weeks-box2 {
     display: flex;
     flex-direction: column;
     gap: 10px 10px;
-    width: 300px;
-    height: 300px;
+    width: auto;
+    height: auto;
+    margin-top: 40px;
+    position: relative;
+    backdrop-filter: blur (6px);
 }
 
 .big-box {
@@ -459,18 +466,24 @@ nav i {
     margin-top: 40px;
     border-radius: 25px;
     color: white;
+}
 
+.big-box:hover {
+    transform: translateY(-5px);
 }
 
 .small-box {
     height: 176px;
-    width: 200px;
+    width: 420px;
     display: flex;
     flex-direction: row;
     background-position: center;
     gap: 10px;
+    justify-content: space-around;
+}
 
-
+.small-box:hover {
+    transform: translateY(-5px);
 }
 
 .gerege {
@@ -481,6 +494,22 @@ nav i {
     background-size: cover;
     gap: 10px 10px;
     border-radius: 25px;
+    color: white;
+    align-content: center;
+    padding: 10px 10px;
+}
+
+.gerege:hover {
+    transform: translateY(-5px);
+}
+
+.gerege p {
+    color: white;
+    width: 130px;
+    background-color: #0078f0;
+    margin: 10px 10px 10px 10px;
+    padding: 5px 10px;
+    border-radius: 15px;
 }
 
 .Financial {
@@ -490,15 +519,35 @@ nav i {
     background-position: center;
     background-size: cover;
     border-radius: 25px;
+    border-radius: 25px;
+    color: white;
+    align-content: center;
+    padding: 10px 10px;
+    color: white;
+    align-content: center;
+    padding: 10px 10px;
+}
+
+.Financial p {
+    color: white;
+    width: 130px;
+    background-color: #0078f0;
+    margin: 10px 10px 10px 10px;
+    padding: 5px 10px;
+    border-radius: 15px;
 }
 
 .big-box2 {
-    height: 176px;
-    width: 200px;
+    height: auto;
+    width: auto;
     display: flex;
-    flex-direction: row;
     background-position: center;
     gap: 10px;
+    position: relative;
+}
+
+.big-box2:hover {
+    transform: translateY(-5px);
 }
 
 .gerege2 {
@@ -509,6 +558,18 @@ nav i {
     background-size: cover;
     gap: 10px 10px;
     border-radius: 25px;
+    color: white;
+    align-content: center;
+    padding: 10px 10px;
+}
+
+.gerege2 p {
+    color: white;
+    width: 130px;
+    background-color: #0078f0;
+    margin: 10px 10px 10px 10px;
+    padding: 5px 10px;
+    border-radius: 15px;
 }
 
 .Financial2 {
@@ -518,15 +579,31 @@ nav i {
     background-position: center;
     background-size: cover;
     border-radius: 25px;
+    color: white;
+    align-content: center;
+    padding: 10px 10px;
+}
+
+.Financial2 p {
+    color: white;
+    width: 130px;
+    background-color: #0078f0;
+    margin: 10px 10px 10px 10px;
+    padding: 5px 10px;
+    border-radius: 15px;
 }
 
 .small-box2 {
-    height: 176px;
-    width: 200px;
+    height: auto;
+    width: auto;
     display: flex;
     flex-direction: row;
     background-position: center;
     gap: 10px;
+}
+
+.small-box2:hover {
+    transform: translateY(-5px);
 }
 
 .gerege3 {
@@ -537,6 +614,18 @@ nav i {
     background-size: cover;
     gap: 10px 10px;
     border-radius: 25px;
+    color: white;
+    align-content: center;
+    padding: 10px 10px;
+}
+
+.gerege3 p {
+    color: white;
+    width: 130px;
+    background-color: #0078f0;
+    margin: 10px 10px 10px 10px;
+    padding: 5px 10px;
+    border-radius: 15px;
 }
 
 .Financial3 {
@@ -546,4 +635,86 @@ nav i {
     background-position: center;
     background-size: cover;
     border-radius: 25px;
+    color: white;
+    align-content: center;
+    padding: 10px 10px;
+}
+
+.Financial3 p {
+    color: white;
+    width: 130px;
+    background-color: #0078f0;
+    margin: 10px 10px 10px 10px;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+@media screen and (min-width: 786px) {
+
+    .article-1 {}
+}
+
+
+
+/*xxxxxxxxxxxxxxxxxx Footer xxxxxxxxxxxxxxxxxxxx  */
+
+.footer-main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    margin-top: 20px;
+    padding-top: 30px;
+}
+
+.footer-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footer-top {}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.hamtran {
+    width: 200px;
+    background-color: rgb(71, 71, 91);
+    color: white;
+    border-radius: 25px;
+    padding: 10px 30px 10px 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.hamtran p {}
+
+.unread-icon img {
+    width: 134px;
+    height: 16px;
+}
+
+.app {
+    display: flex;
+    flex-direction: row;
+    border-color: darkblue;
+    justify-content: space-around;
+    width: auto;
+    height: 100px;
+}
+
+.google {
+    background-image: url(https://unread.today/img/app_android.png);
+    height: auto;
+    width: auto;
+}
+
+.app-icon {
+    background-image: url(https://unread.today/img/app_ios.png);
+    height: auto;
+    width: auto;
 }

@@ -16,3 +16,66 @@
     background-color: white;
     padding: 5px;
 }
+
+
+
+
+.fuite-box0 {}
+
+.fuite-box0 {
+    display: flex;
+}
+
+.banana {
+    width: 20px;
+    height: 20px;
+    background-color: green;
+}
+
+.kiwi {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+}
+
+.grape {
+    width: 20px;
+    height: 20px;
+    background-color: pink;
+}
+
+
+
+
+
+.fuite-box1 {
+    display: flex;
+}
+
+.apple1 {
+    width: 20px;
+    height: 20px;
+    background-color: aqua;
+}
+
+.apple2 {
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+}
+
+.fuite-box2 {
+    display: flex;
+}
+
+.orange1 {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+}
+
+.orange2 {
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+}
